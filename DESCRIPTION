@@ -1,0 +1,23 @@
+Package: fuse
+Type: Package
+Title: Functions with Space Embedding
+Version: 0.0.9000
+Authors@R: person("Aymeric", "Stamm", email = "aymeric@stamm.fr",
+  role = c("aut", "cre"))
+Maintainer: Aymeric Stamm <aymeric@stamm.fr>
+Description: This package provides R6 classes for describing 
+    functional data with embedding in various infinite-dimensional 
+    Hilbert spaces. Currently, functional data classes are 
+    implemented in Sobolev spaces (including the popular the L2 
+    space of square-integrable functions) and in Bayes space. 
+    Operators +, -, *, and / as well as inner product and induced 
+    distance are implemented as well.
+License: Affero GPL (AGPL v3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: R6,
+    stats,
+    rlang,
+    tibble,
+    ggplot2
