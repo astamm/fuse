@@ -21,3 +21,8 @@ Imports: R6,
     rlang,
     tibble,
     ggplot2
+Collate: 
+    'FunctionalData.R'
+    'BayesData.R'
+    'Operations.R'
+    'SobolevData.R'

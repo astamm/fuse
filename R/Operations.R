@@ -15,6 +15,7 @@
 #' y0 <- 1:10
 #' z2 <- f + y0
 #' @name groupGeneric.FunctionalData
+#' @include FunctionalData.R
 NULL
 
 #' @export

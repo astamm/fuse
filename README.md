@@ -6,13 +6,13 @@
 This package provides `R6` classes for describing functional data with
 embedding in various infinite-dimensional Hilbert spaces. Currently,
 functional data classes are implemented in Sobolev spaces (including the
-popular the \(L^2\) space of square-integrable functions) and in Bayes
+popular \(L^2\) space of square-integrable functions) and in Bayes
 space. Operators `+`, `-`, `*`, and `/` as well as inner product and
 induced distance are implemented as well.
 
 ## Installation
 
-You can install \`fusez from github with:
+You can install `fuse` from github with:
 
 ``` r
 # install.packages("devtools")
