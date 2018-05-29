@@ -7,18 +7,18 @@
 \alias{BayesData}
 \alias{SobolevData}
 \title{\code{R6} Class for Functional Data}
-\format{An \code{\link[R6]{R6Class}} generator object.}
+\format{An \code{\link[R6]{R6Class}} generator object for generating
+  \code{\link{FunctionalData}} objects.}
 \usage{
-FunctionalData$new(grid = c(0, 2 * pi), value = sin, resolution =
-  1000L)
+FunctionalData$new(grid = c(-5, 5), value = dnorm, resolution = 100L)
 
 BayesData$new(grid = c(-5, 5), value = dnorm, resolution = 100L)
 
 SobolevData$new(grid = c(-5, 5), value = dnorm, resolution = 100L)
 }
 \value{
-Object of \code{\link[R6]{R6Class}} with methods for communication
-  with lightning-viz server.
+A \code{\link{FunctionalData}} object with a set of specific methods
+  for functional data.
 }
 \description{
 \code{R6} Class for Functional Data

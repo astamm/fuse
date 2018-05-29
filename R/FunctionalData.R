@@ -2,14 +2,14 @@
 #'
 #' @docType class
 #'
-#' @usage FunctionalData$new(grid = c(0, 2 * pi), value = sin, resolution =
-#'   1000L)
+#' @usage FunctionalData$new(grid = c(-5, 5), value = dnorm, resolution = 100L)
 #'
 #' @export
 #' @keywords data
-#' @return Object of \code{\link[R6]{R6Class}} with methods for communication
-#'   with lightning-viz server.
-#' @format An \code{\link[R6]{R6Class}} generator object.
+#' @return A \code{\link{FunctionalData}} object with a set of specific methods
+#'   for functional data.
+#' @format An \code{\link[R6]{R6Class}} generator object for generating
+#'   \code{\link{FunctionalData}} objects.
 #'
 #' @examples
 #' f <- SobolevData$new(value = dnorm, grid = c(-5, 5))
@@ -49,7 +49,7 @@ FunctionalData <- R6::R6Class(
   classname = "FunctionalData",
   cloneable = FALSE,
   public = list(
-    initialize = function(grid = c(0, 2 * pi), value = sin, resolution = 1000L) {
+    initialize = function(grid = c(-5, 5), value = dnorm, resolution = 100L) {
       # If value is a function, then grid can be either a range or a grid and the grid
       # is then resampled to the input resolution.
       # If value is a vector, then grid must be a vector of same size as
